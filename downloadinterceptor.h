@@ -19,6 +19,7 @@ public:
 Q_SIGNALS:
     void success(QString path);
     void fail(QString message);
+    void downloading(qint64 received, qint64 total);
 
 public Q_SLOTS:
     void downloadFinished(QNetworkReply *reply);
