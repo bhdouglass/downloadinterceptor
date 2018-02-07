@@ -45,6 +45,12 @@ Connections {
         Something went wrong and the `message` argument will tell you what it was.
         */
     }
+    onDownloading: {
+        /* 
+        received are the bytes downloaded at the moment
+        total is the total size bytes of the file being downloaded
+        */
+    }
 }
 ~~~
 
