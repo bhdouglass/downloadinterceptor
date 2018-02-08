@@ -28,6 +28,14 @@ WebView {
     }
 }
 
+Button {
+    onClicked: {
+        DownloadInterceptor.abort()
+        /*
+        cancels current download
+        */
+    }
+}
 Connections {
     target: DownloadInterceptor
     onSuccess: {
